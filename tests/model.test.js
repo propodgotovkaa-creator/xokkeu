@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {WORDS,ORIGIN,GOALS,GOAL_Y,aimAt,flight,shuffled} from '../model.js';
+test('13 unique words and correct phoneme positions',()=>{assert.equal(WORDS.length,13);assert.equal(new Set(WORDS.map(w=>w.id)).size,13);for(const w of WORDS){const i=w.word.indexOf('ш');assert.equal(w.category,i===0?0:i===w.word.length-1?2:1,w.word);}});
+test('all three directions preserve the frozen aiming ray',()=>{for(const [goal,x]of GOALS.entries()){const a=aimAt(x);assert.equal(a.goal,goal);assert.equal(a.inMouth,true);for(let i=0;i<=100;i++){const p=flight(a,i/100);assert.ok(Math.abs((p.x-ORIGIN.x)*(GOAL_Y-ORIGIN.y)-(p.groundY-ORIGIN.y)*(x-ORIGIN.x))<1e-7);assert.ok(p.scale>=.43-1e-10&&p.scale<=1);}const p=flight(a,1);assert.equal(p.x,x);assert.equal(p.y,GOAL_Y);}});
+test('wrong shot hits crossbar without lateral redirection',()=>{for(const x of GOALS){const a=aimAt(x),p=flight(a,1,true);assert.equal(p.x,x);assert.equal(p.y,335);}});
+test('aim is continuous, clamps to rink, gaps miss',()=>{assert.equal(aimAt(100).x,330);assert.equal(aimAt(1800).x,1350);assert.equal(aimAt(645).inMouth,false);let prev=aimAt(330).angle;for(let x=331;x<=1350;x++){const a=aimAt(x);assert.ok(a.angle>prev);assert.ok(a.angle-prev<.005);prev=a.angle;}});
+test('shuffle retains each word once',()=>{for(let i=0;i<30;i++)assert.deepEqual(shuffled().map(w=>w.id).sort(),WORDS.map(w=>w.id).sort());});
