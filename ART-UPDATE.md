@@ -1,0 +1,11 @@
+## Обновлённый малыш и обложка «Забрось шайбу!»
+
+Встроенный ImageGen. Малыш заменён на мальчика-младенца в простом голубом комбинезоне. Обложка — отдельный файл для Genially, игровой интерфейс не менялся.
+
+### Baby
+
+Use case: illustration-story. Educational Russian vocabulary picture for word малыш. A single unmistakably very young BABY BOY aged 6-8 months, sitting with chubby little legs, round infant face, very sparse short soft light brown baby hair, small ears, natural cheerful smile, realistic infant proportions. Wearing a simple powder-blue short-sleeved baby romper with shorts and two tiny buttons, bare feet. NO dress, NO ruffles, NO bows, NO long hair, NO older toddler. Premium soft hand-painted gouache children's book illustration, warm natural skin, gentle tactile painted texture, refined bright colors, readable clean silhouette. Full body centered on genuinely transparent background, no props, no text, no backdrop. Match soft warm illustrated vocabulary cards of hockey game.
+
+### Cover
+
+Use case: illustration-story. Create a finished premium illustrated cover image for a children's hockey speech game, for insertion in Genially. LANDSCAPE 16:9. Use attached arena as style and palette reference: soft hand-painted gouache, textured luminous aqua ice, warm cream, coral red, deep navy, cozy golden arena lights, softly painted audience. Compose a beautiful inviting hockey rink with coral-red hockey goal in middle distance, a black puck and correctly oriented hockey stick in foreground along the lower edge, blade on ice, handle rising toward upper right. Keep uncluttered. The exact Russian title is centered prominently in the middle of the entire cover in two balanced lines: 'Забрось' then 'шайбу!'. Spell exactly З А Б Р О С Ь / Ш А Й Б У ! . Large beautiful rounded bold Cyrillic lettering, deep navy with subtle warm cream outline, softly hand-lettered but perfectly legible. Title is the focal point, occupies middle 55% width, integrated in composition, generous negative space behind it. No other words, no labels, no buttons, no interface, no logos, no watermark. Professional children's book art direction, refined bright soft color, no glossy 3D. Deliver a complete polished cover, not a screenshot or mockup.
